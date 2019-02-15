@@ -1,0 +1,11 @@
+version: '3'
+services:
+ nginx:
+  container_name: job-post
+  image: nginx
+  ports:
+  - "8888:80"
+  volumes:
+  - ./:/usr/share/nginx/html
+
+
